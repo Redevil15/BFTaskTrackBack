@@ -9,7 +9,7 @@ async function bootstrap() {
 
   // Habilitar CORS
   app.enableCors({
-    origin: 'http://localhost:5173', // Permite solicitudes desde el cliente
+    origin: ['http://localhost:5173', 'https://bftasktrack.netlify.app'], // Permite solicitudes desde el cliente
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
   });
